@@ -1,0 +1,103 @@
+[
+  // {
+  //   "context": "",
+  //   "bindings": {
+  //     "ctrl-alt-1": ["pane::ActivateItem", 0],
+  //     "ctrl-f 1": ["workspace::SendKeystrokes", "ctrl-cmd-1 ctrl-alt-1"],
+  //     "ctrl-alt-2": ["pane::ActivateItem", 1],
+  //     "ctrl-f 2": ["workspace::SendKeystrokes", "ctrl-cmd-2 ctrl-alt-2"]
+  //   }
+  // },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"],
+      ", f": "file_finder::Toggle",
+      ", w": "workspace::Save",
+      ", t": "workspace::ToggleLeftDock",
+      ", q": "pane::CloseActiveItem",
+      ", s": "pane::DeploySearch",
+      ", g": ["task::Spawn", { "task_name": "start lazygit" }],
+      ", b": ["task::Spawn", { "task_name": "start lazygit file log" }]
+      // "ctrl-cmd-2": "workspace::ToggleBottomDock",
+      // "ctrl-cmd-1": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock",
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "space p": "editor::Format",
+      "space space": "file_finder::Toggle",
+      "ctrl-k": "pane::ActivateNextItem",
+      "ctrl-j": "pane::ActivatePrevItem",
+      "space v": "pane::SplitRight",
+      "space w": "pane::CloseActiveItem",
+      "space h": "workspace::ActivateNextPane",
+      "space l": "workspace::ActivatePreviousPane",
+      ", f": "file_finder::Toggle",
+      ", q": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-h": "vim::Left",
+      "alt-l": "vim::Right",
+      "alt-j": "vim::Down",
+      "alt-k": "vim::Up"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == operator",
+    "bindings": {
+      "escape": "vim::ClearOperators",
+      "ctrl-c": "vim::ClearOperators",
+      "ctrl-[": "vim::ClearOperators",
+      "g c": "vim::Comment"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      ", t": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "ctrl-k": "pane::ActivateNextItem",
+      "ctrl-j": "pane::ActivatePrevItem"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      ", q": "pane::CloseActiveItem",
+      "ctrl-f r": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Dock",
+
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+      // ... or other keybindings
+    }
+  }
+]
