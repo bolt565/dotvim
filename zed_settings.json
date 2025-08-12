@@ -1,0 +1,46 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
+    "version": "2"
+  },
+  "vim_mode": true,
+  "ui_font_size": 12.8,
+  "buffer_font_size": 12.8,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "vim": {
+    "use_multiline_find": true,
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+    "highlight_on_yank_duration": 50
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["solargraph", "rubocop", "!ruby-lsp"],
+      "format_on_save": "off"
+    },
+    "TypeScript": {
+      "format_on_save": "off"
+    },
+    "TSX": {
+      "format_on_save": "off"
+    },
+    "JavaScript": {
+      "format_on_save": "off"
+    },
+    "YAML": {
+      "enable_language_server": false
+    }
+  }
+}
