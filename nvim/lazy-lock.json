@@ -1,0 +1,14 @@
+{
+  "fzf.vim": { "branch": "master", "commit": "356608e2ae5d9127e2c964885ea2b21ea7aea9ab" },
+  "git-messenger.vim": { "branch": "master", "commit": "fd124457378a295a5d1036af4954b35d6b807385" },
+  "gruvbox": { "branch": "master", "commit": "5d15b2765f59754d7ac263c88a0f6e3e58124951" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "nerdtree": { "branch": "master", "commit": "690d061b591525890f1471c6675bcb5bdc8cdff9" },
+  "nerdtree-git-plugin": { "branch": "master", "commit": "e1fe727127a813095854a5b063c15e955a77eafb" },
+  "palenight.vim": { "branch": "master", "commit": "5552a6349bcd927df9f17db34f017b77b963e503" },
+  "vim-autotag": { "branch": "master", "commit": "501fca6b79cb1ec4453f548b0d4fff3e9717812e" },
+  "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" },
+  "vim-fugitive": { "branch": "master", "commit": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0" },
+  "vim-scheme": { "branch": "master", "commit": "5a306e983124e9c6f4316f4a0c7e27ddafdb2cf8" },
+  "vim-sexp": { "branch": "master", "commit": "1bf50921308f0188d1c1ecf8a712cc72ab2775e5" }
+}
